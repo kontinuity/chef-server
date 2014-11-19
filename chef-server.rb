@@ -1,1 +1,1 @@
-nginx['ssl_port'] = 4443
+nginx['ssl_port'] = 443

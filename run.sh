@@ -5,7 +5,7 @@ sysctl -w kernel.shmmax=17179869184
 hostname=`hostname`
 cat > /var/opt/chef-server/nginx/etc/chef_https_lb.conf << EOL
 server {
-  listen 4443;
+  listen 443;
   server_name $hostname;
   access_log /var/log/chef-server/nginx/access.log opscode;
 

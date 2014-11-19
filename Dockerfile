@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
-MAINTAINER Clement Buisson <clement.buisson@gmail.com>
-#This is a fork of base/chef-server
+MAINTAINER Arif Amirani <me@arif.im>
+#This is a fork of base/chef-server -> c-buisson/chef-server
 
 RUN apt-get update
 ENV DEBIAN_FRONTEND noninteractive
@@ -20,4 +20,4 @@ VOLUME /root/
 VOLUME /var/log
 CMD ["run.sh"]
 
-EXPOSE 4443
+EXPOSE 443
